@@ -25,6 +25,7 @@
 		8D70001528D6461400085E03 /* NanumGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D70001328D6461400085E03 /* NanumGothic.ttf */; };
 		8D70001628D6461400085E03 /* NanumGothicBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D70001428D6461400085E03 /* NanumGothicBold.ttf */; };
 		8D70001828D6519A00085E03 /* GridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D70001728D6519A00085E03 /* GridCollectionViewCell.swift */; };
+		8D70001A28D66DA800085E03 /* popUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D70001928D66DA800085E03 /* popUpVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		8D70001328D6461400085E03 /* NanumGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothic.ttf; sourceTree = "<group>"; };
 		8D70001428D6461400085E03 /* NanumGothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicBold.ttf; sourceTree = "<group>"; };
 		8D70001728D6519A00085E03 /* GridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionViewCell.swift; sourceTree = "<group>"; };
+		8D70001928D66DA800085E03 /* popUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUpVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				8D70000228D5D80E00085E03 /* DetailVC.swift */,
 				8D4E822728D5AA0700DD414D /* QuestTableVC.swift */,
 				8D70000828D6430100085E03 /* ProfileVC.swift */,
+				8D70001928D66DA800085E03 /* popUpVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				8D4E81FB28D59BD700DD414D /* ViewController.swift in Sources */,
 				8D4E81F728D59BD700DD414D /* AppDelegate.swift in Sources */,
 				8D70000728D5F13D00085E03 /* ItemCollectionVC.swift in Sources */,
+				8D70001A28D66DA800085E03 /* popUpVC.swift in Sources */,
 				8D4E81F928D59BD700DD414D /* SceneDelegate.swift in Sources */,
 				8D70000328D5D80E00085E03 /* DetailVC.swift in Sources */,
 			);
