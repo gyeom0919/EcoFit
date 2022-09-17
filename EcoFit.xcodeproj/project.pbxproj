@@ -21,6 +21,10 @@
 		8D4E822E28D5B06400DD414D /* QuestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E822D28D5B06400DD414D /* QuestCell.swift */; };
 		8D70000328D5D80E00085E03 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D70000228D5D80E00085E03 /* DetailVC.swift */; };
 		8D70000728D5F13D00085E03 /* ItemCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D70000628D5F13D00085E03 /* ItemCollectionVC.swift */; };
+		8D70000928D6430100085E03 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D70000828D6430100085E03 /* ProfileVC.swift */; };
+		8D70001528D6461400085E03 /* NanumGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D70001328D6461400085E03 /* NanumGothic.ttf */; };
+		8D70001628D6461400085E03 /* NanumGothicBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D70001428D6461400085E03 /* NanumGothicBold.ttf */; };
+		8D70001828D6519A00085E03 /* GridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D70001728D6519A00085E03 /* GridCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +62,11 @@
 		8D4E822B28D5AC6C00DD414D /* QuestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestData.swift; sourceTree = "<group>"; };
 		8D4E822D28D5B06400DD414D /* QuestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestCell.swift; sourceTree = "<group>"; };
 		8D70000228D5D80E00085E03 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
-		8D70000628D5F13D00085E03 /* ItemCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ItemCollectionVC.swift; path = VC/ItemCollectionVC.swift; sourceTree = "<group>"; };
+		8D70000628D5F13D00085E03 /* ItemCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionVC.swift; sourceTree = "<group>"; };
+		8D70000828D6430100085E03 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		8D70001328D6461400085E03 /* NanumGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothic.ttf; sourceTree = "<group>"; };
+		8D70001428D6461400085E03 /* NanumGothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicBold.ttf; sourceTree = "<group>"; };
+		8D70001728D6519A00085E03 /* GridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +97,7 @@
 		8D4E81EA28D59BD700DD414D = {
 			isa = PBXGroup;
 			children = (
+				8D70001728D6519A00085E03 /* GridCollectionViewCell.swift */,
 				8D4E81F528D59BD700DD414D /* EcoFit */,
 				8D4E820C28D59BD700DD414D /* EcoFitTests */,
 				8D4E821628D59BD800DD414D /* EcoFitUITests */,
@@ -109,10 +118,10 @@
 		8D4E81F528D59BD700DD414D /* EcoFit */ = {
 			isa = PBXGroup;
 			children = (
-				8D4E822B28D5AC6C00DD414D /* QuestData.swift */,
+				8D70000A28D6453700085E03 /* Font */,
 				8D4E822628D5A9EB00DD414D /* VC */,
 				8D4E81F628D59BD700DD414D /* AppDelegate.swift */,
-				8D70000628D5F13D00085E03 /* ItemCollectionVC.swift */,
+				8D4E822B28D5AC6C00DD414D /* QuestData.swift */,
 				8D4E81F828D59BD700DD414D /* SceneDelegate.swift */,
 				8D4E81FC28D59BD700DD414D /* Main.storyboard */,
 				8D4E81FF28D59BD700DD414D /* Assets.xcassets */,
@@ -143,11 +152,22 @@
 		8D4E822628D5A9EB00DD414D /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				8D70000628D5F13D00085E03 /* ItemCollectionVC.swift */,
 				8D4E81FA28D59BD700DD414D /* ViewController.swift */,
 				8D70000228D5D80E00085E03 /* DetailVC.swift */,
 				8D4E822728D5AA0700DD414D /* QuestTableVC.swift */,
+				8D70000828D6430100085E03 /* ProfileVC.swift */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		8D70000A28D6453700085E03 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				8D70001328D6461400085E03 /* NanumGothic.ttf */,
+				8D70001428D6461400085E03 /* NanumGothicBold.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,8 +274,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D70001528D6461400085E03 /* NanumGothic.ttf in Resources */,
 				8D4E820328D59BD700DD414D /* LaunchScreen.storyboard in Resources */,
 				8D4E820028D59BD700DD414D /* Assets.xcassets in Resources */,
+				8D70001628D6461400085E03 /* NanumGothicBold.ttf in Resources */,
 				8D4E81FE28D59BD700DD414D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +306,8 @@
 				8D4E822E28D5B06400DD414D /* QuestCell.swift in Sources */,
 				8D4E822C28D5AC6C00DD414D /* QuestData.swift in Sources */,
 				8D4E822828D5AA0700DD414D /* QuestTableVC.swift in Sources */,
+				8D70000928D6430100085E03 /* ProfileVC.swift in Sources */,
+				8D70001828D6519A00085E03 /* GridCollectionViewCell.swift in Sources */,
 				8D4E81FB28D59BD700DD414D /* ViewController.swift in Sources */,
 				8D4E81F728D59BD700DD414D /* AppDelegate.swift in Sources */,
 				8D70000728D5F13D00085E03 /* ItemCollectionVC.swift in Sources */,
@@ -468,6 +492,7 @@
 				DEVELOPMENT_TEAM = 79KM28R566;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EcoFit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EcoFit;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -496,6 +521,7 @@
 				DEVELOPMENT_TEAM = 79KM28R566;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EcoFit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EcoFit;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

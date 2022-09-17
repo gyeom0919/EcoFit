@@ -16,7 +16,11 @@ class QuestTableVC: UIViewController {
     
     var param : QuestData!
     
-    var questList = ["분리수거하기", "현일이 한대치기", "카페가서 텀블러에 담기", "스테인레스 빨대 장만하기", "걸어다니기"]
+    var questList = ["쓰레기는 항상 깔끔하게!", "마음에 안드는 친구 처치!!", "카페가서 텀블러에 담기", "스테인레스 빨대 장만하기", "걸어다니기"]
+    
+    var questTitle = ["분리수거 하기", "현일이 때리기", "","",""]
+    
+    var condition = ["분리수거 용기 청소하고 인증하기!", "","","",""]
     
 //    @IBAction func moveView(_ sender: Any) {
 //        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -73,9 +77,10 @@ extension QuestTableVC : UITableViewDataSource {
         
         cell.cellBackground.layer.cornerRadius = cell.cellBackground.frame.height / 2 - 30
         cell.subtitleLabel.text = questList[indexPath.row]
-//        cell.textLabel?.text = questList[indexPath.row]
+        cell.mainTitleLabel.text = questTitle[indexPath.row]
         
-        cell.custom_Image.image = UIImage(named: questList[indexPath.row])
+        cell.custom_Image.image = UIImage(named: questTitle[indexPath.row])
+        
         
 //        cell.moreButton.layer.backgroundColor = UIColor.gray.cgColor
 //        cell.moreButton.layer.cornerRadius = 17
@@ -94,7 +99,7 @@ extension QuestTableVC {
         if segue.identifier == "showDetail" {
             let vc = segue.destination as? DetailVC
             if let index = sender as? Int {
-//                vc?.maintitle =
+                vc?.maintitle = questTitle[index]
                 vc?.semiTitle = questList[index]
             }
         }

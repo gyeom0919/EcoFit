@@ -11,8 +11,12 @@ class DetailVC: UIViewController {
     
     @IBOutlet weak var mainTitleLabel: UILabel!
     @IBOutlet weak var semiTitleLabel: UILabel!
+    @IBOutlet weak var conditionLabel: UILabel!
     
-//    override func loadView() {
+    var condition = ["분리수거 용기 청소하고 인증하기!", "","","",""]
+
+    
+    //    override func loadView() {
 //        super.loadView()
 //        updateUI()
 //    }
@@ -25,7 +29,8 @@ class DetailVC: UIViewController {
 
     var maintitle : String?
     var semiTitle : String?
-    
+    var i = 0
+//    var condition : String?
     
     
     func updateUI() {
@@ -33,6 +38,14 @@ class DetailVC: UIViewController {
             
             mainTitleLabel.text = maintitle
             semiTitleLabel.text = semiTitle
+        if maintitle == "분리수거 하기"{
+            conditionLabel.text = "분리수거 용기 청소하고 인증하기!"
+        }
+        
+        
+        
 //        }
     }
+    
+    
 }
