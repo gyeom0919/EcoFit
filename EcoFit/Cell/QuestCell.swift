@@ -10,6 +10,9 @@ import UIKit
 class QuestCell: UITableViewCell {
     
     
+//    var imageList = ["dong_medal","dong_medal","dong_medal","dong_medal","eun_medal","eun_medal","eun_medal","eun_medal","geum_medal","geum_medal","geum_medal","geum_medal"]
+    
+    
     @IBOutlet weak var custom_Image: UIImageView!
     @IBOutlet weak var cellBackground: UIView!
     @IBOutlet weak var subtitleLabel: UILabel!
@@ -17,10 +20,14 @@ class QuestCell: UITableViewCell {
 //    @IBOutlet weak var moreButton: UIButton!
     @IBOutlet weak var fakeButton: UILabel!
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+//        custom_Image.image = UIImagxe(systemName: imageList[IndexPath.row])
     }
+
     
 
 

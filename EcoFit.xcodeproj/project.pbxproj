@@ -26,6 +26,7 @@
 		8D70001628D6461400085E03 /* NanumGothicBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D70001428D6461400085E03 /* NanumGothicBold.ttf */; };
 		8D70001828D6519A00085E03 /* GridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D70001728D6519A00085E03 /* GridCollectionViewCell.swift */; };
 		8D70001A28D66DA800085E03 /* popUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D70001928D66DA800085E03 /* popUpVC.swift */; };
+		8D70001C28D68F5300085E03 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D70001B28D68F5300085E03 /* ProfileTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		8D70001428D6461400085E03 /* NanumGothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicBold.ttf; sourceTree = "<group>"; };
 		8D70001728D6519A00085E03 /* GridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionViewCell.swift; sourceTree = "<group>"; };
 		8D70001928D66DA800085E03 /* popUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUpVC.swift; sourceTree = "<group>"; };
+		8D70001B28D68F5300085E03 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +101,6 @@
 		8D4E81EA28D59BD700DD414D = {
 			isa = PBXGroup;
 			children = (
-				8D70001728D6519A00085E03 /* GridCollectionViewCell.swift */,
 				8D4E81F528D59BD700DD414D /* EcoFit */,
 				8D4E820C28D59BD700DD414D /* EcoFitTests */,
 				8D4E821628D59BD800DD414D /* EcoFitUITests */,
@@ -120,6 +121,7 @@
 		8D4E81F528D59BD700DD414D /* EcoFit */ = {
 			isa = PBXGroup;
 			children = (
+				8D70001D28D6AC1100085E03 /* Cell */,
 				8D70000A28D6453700085E03 /* Font */,
 				8D4E822628D5A9EB00DD414D /* VC */,
 				8D4E81F628D59BD700DD414D /* AppDelegate.swift */,
@@ -129,7 +131,6 @@
 				8D4E81FF28D59BD700DD414D /* Assets.xcassets */,
 				8D4E820128D59BD700DD414D /* LaunchScreen.storyboard */,
 				8D4E820428D59BD700DD414D /* Info.plist */,
-				8D4E822D28D5B06400DD414D /* QuestCell.swift */,
 			);
 			path = EcoFit;
 			sourceTree = "<group>";
@@ -171,6 +172,16 @@
 				8D70001428D6461400085E03 /* NanumGothicBold.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		8D70001D28D6AC1100085E03 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8D4E822D28D5B06400DD414D /* QuestCell.swift */,
+				8D70001728D6519A00085E03 /* GridCollectionViewCell.swift */,
+				8D70001B28D68F5300085E03 /* ProfileTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +326,7 @@
 				8D4E81F728D59BD700DD414D /* AppDelegate.swift in Sources */,
 				8D70000728D5F13D00085E03 /* ItemCollectionVC.swift in Sources */,
 				8D70001A28D66DA800085E03 /* popUpVC.swift in Sources */,
+				8D70001C28D68F5300085E03 /* ProfileTableViewCell.swift in Sources */,
 				8D4E81F928D59BD700DD414D /* SceneDelegate.swift in Sources */,
 				8D70000328D5D80E00085E03 /* DetailVC.swift in Sources */,
 			);

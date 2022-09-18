@@ -22,7 +22,7 @@ class popUpVC: UIViewController {
          configurationLeftButton()
          configurationBenefits()
          configurationTitle()
-         
+         configurationImage()
          // SetUp View
          view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
          
@@ -90,6 +90,26 @@ extension popUpVC {
             titleLabel.topAnchor.constraint(equalTo: popUpView.topAnchor, constant: 80),
             titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16)
         ])
+    }
+    
+    func configurationImage() {
+        var imageView : UIImageView
+        imageView = UIImageView(frame: CGRectMake(0, 0, 200, 100))
+        
+        imageView.image = UIImage(named: "image 54")
+
+        view.addSubview(imageView)
+        
+        
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            imageView.topAnchor.constraint(equalTo: popUpView.topAnchor, constant: 80),
+            imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 3),
+            imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -3),
+            imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100)
+        ])
+        
     }
   
     

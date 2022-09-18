@@ -16,11 +16,13 @@ class QuestTableVC: UIViewController {
     
     var param : QuestData!
     
-    var questList = ["쓰레기는 항상 깔끔하게!", "마음에 안드는 친구 처치!!", "카페가서 텀블러에 담기", "스테인레스 빨대 장만하기", "걸어다니기"]
+    var questList = ["분리수거 Bronze", "오늘도 EcoFit하게 Bronze", "웨폰마스터 Bronze", "아마추어 워커", "분리수거 Silver", "오늘도 EcoFit하게 Silver", "웨폰마스터 Sliver", "프로 워커", "분리수거 Gold", "오늘도 EcoFit하게 Gold", "웨폰마스터 Gold","마스터 워커"]
     
-    var questTitle = ["분리수거 하기", "현일이 때리기", "","",""]
+    var questTitle = ["분리수거 하기", "마일리지 적립하기", "무기 구입하기", "만보 걷기", "분리수거 하기", "마일리지 적립하기", "무기 구입하기", "만보 걷기", "분리수거 하기", "마일리지 적립하기", "무기 구입하기", "만보 걷기"]
     
-    var condition = ["분리수거 용기 청소하고 인증하기!", "","","",""]
+    var condition = ["분리수거 1회 완료하기", "3일 연속 마일리지 적립하기", "무기 3회 구입하기", "만보 걷기 7일차", "분리수거 5회 완료하", "7일 연속 마일리지 적립하기", "무기 6회 구입하기", "만보 걷기 14일차", "분리수거 10회 완료하기", "10일 연속 마일리지 적립하기", "무기 9회 구입하기", "만보 걷기 21일차"]
+    
+    var imageList = ["dong_medal","dong_medal","dong_medal","dong_medal","eun_medal","eun_medal","eun_medal","eun_medal","gum_medal","gum_medal","gum_medal","gum_medal"]
     
 //    @IBAction func moveView(_ sender: Any) {
 //        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -78,12 +80,18 @@ extension QuestTableVC : UITableViewDataSource {
         cell.cellBackground.layer.cornerRadius = cell.cellBackground.frame.height / 2 - 30
         cell.subtitleLabel.text = questList[indexPath.row]
         cell.mainTitleLabel.text = questTitle[indexPath.row]
-        
-        cell.custom_Image.image = UIImage(named: questTitle[indexPath.row])
-        
+//        cell.custom_Image.image = UIImage(named: " imageList[indexPath.row]")
+
+//        cell.custom_Image.image = UIImage(named: questTitle[indexPath.row])
+//
         
 //        cell.moreButton.layer.backgroundColor = UIColor.gray.cgColor
 //        cell.moreButton.layer.cornerRadius = 17
+        
+        cell.custom_Image.image = UIImage(named: imageList[indexPath.row])
+        
+        
+        
         
         cell.fakeButton.layer.backgroundColor = UIColor.gray.cgColor
         cell.fakeButton.layer.cornerRadius = 17
@@ -101,6 +109,8 @@ extension QuestTableVC {
             if let index = sender as? Int {
                 vc?.maintitle = questTitle[index]
                 vc?.semiTitle = questList[index]
+                vc?.condition = condition[index]
+            
             }
         }
         
